@@ -1,5 +1,5 @@
 {
-  "name": "@3v69/nubo-logger",
+  "name": "nubo-logger",
   "version": "1.0.0",
   "description": "A colorful console logger utility for development",
   "main": "dist/index.js",
