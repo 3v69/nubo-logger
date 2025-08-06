@@ -1,6 +1,6 @@
 {
   "name": "nubo-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A colorful console logger utility for development",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
