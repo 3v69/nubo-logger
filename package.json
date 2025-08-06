@@ -52,9 +52,6 @@
     "yarn": ">=1.22",
     "pnpm": ">=8.0"
   },
-  "dependencies": {
-    "@3v69/nubo-logger": "^1.0.0"
-  },
   "type": "module",
   "files": ["dist", "README.md", "LICENSE"],
   "husky": {
