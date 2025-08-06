@@ -46,13 +46,13 @@ log.t.b.mint("[scope]", "All string in bold", "ISOString + bold");
 ### Advanced Usage
 
 ```ts
-import { NuboLogger } from "./index.js";
+import { NuboLogger } from "nubo-logger";
 
-const log = new NuboLogger({ enableInProduction: true });
+const logger = new NuboLogger({ enableInProduction: true });
 
-log.b.mint("[scope-2]", "This is a mint message with additional description");
-log.t.indigo("[scope-2]", "This is an indigo debug message with ISOString");
-log.cyan("[scope-2]", "@cyan", "Scope");
+logger.b.mint("[scope-2]", "This is a mint message with additional description");
+logger.t.indigo("[scope-2]", "This is an indigo debug message with ISOString");
+logger.cyan("[scope-2]", "@cyan", "Scope");
 ```
 
 ## 🎨 Available Colors
