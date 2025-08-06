@@ -128,7 +128,7 @@ try {
 const response = await fetch('/api/data');
 
 if (response.ok) {
-  logger.t.green(`API call successful: ${response.status}`);
+  logger.green(`API call successful: ${response.status}`);
 } else {
   logger.red(`API call failed: ${response.status}`);
 }
