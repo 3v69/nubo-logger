@@ -1,0 +1,68 @@
+{
+  "name": "@3v69/nubo-logger",
+  "version": "1.0.0",
+  "description": "A colorful console logger utility for development",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc --watch",
+    "format": "prettier --write src",
+    "lint": "eslint . --fix",
+    "prepare": "husky",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:coverage:verbose": "jest --coverage --verbose"
+  },
+  "keywords": ["logger", "console", "colors", "typescript", "development", "debug", "cli", "logging", "colorful-logs"],
+  "author": "3v69",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.3",
+    "jest": "^30.0.5",
+    "prettier": "^3.6.2",
+    "ts-jest": "^29.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "husky": "^9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3v69/nubo-logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/3v69/nubo-logger/issues"
+  },
+  "homepage": "https://github.com/3v69/nubo-logger#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=11",
+    "yarn": ">=1.22",
+    "pnpm": ">=8.0"
+  },
+  "dependencies": {
+    "@3v69/nubo-logger": "^1.0.0"
+  },
+  "type": "module",
+  "files": ["dist", "README.md", "LICENSE"],
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run test:coverage"
+    }
+  },
+  "lint-staged": {
+    "*.ts": ["eslint --fix", "prettier --fix"]
+  }
+}
